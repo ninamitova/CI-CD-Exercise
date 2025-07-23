@@ -9,7 +9,11 @@
     "pug": "^3.0.3"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "mocha tests/*.js",
-    "start": "node index.js"
+    "ci:test": "start-server-and-test start http://localhost:3000 test"
+  },
+  "devDependencies": {
+    "start-server-and-test": "^2.0.12"
   }
 }
